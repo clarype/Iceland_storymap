@@ -254,9 +254,11 @@
                 currentLayerGroup.clearLayers();
 
                 var scene = scenes[key];
+		console.log(scene.layers)
                 var layernames = scene.layers;
-                var legendContent = "";
 
+                var legendContent = "";
+		console.log(layernames)
                 if (typeof $("section[data-scene='" + key + "']").data("background") !== 'undefined') {
 
                     $(".storymap-loader").fadeTo(0, 0);

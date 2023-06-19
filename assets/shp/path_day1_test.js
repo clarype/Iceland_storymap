@@ -1,4 +1,4 @@
-{
+var geojsonFeature = {
     "type": "Feature",
     "properties": {
         "name": "Coors Field",
@@ -9,4 +9,4 @@
         "type": "Point",
         "coordinates": [-25.99404, 65.75621]
     }
-}
+};
