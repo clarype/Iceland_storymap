@@ -11,7 +11,7 @@
             triggerpos: '30%',
             navbar: false,
             navwidget: false,
-            legend: true,
+            legend: false,
             loader: true,
             flyto: false,
             scalebar: false,
@@ -107,7 +107,7 @@
         document.createElement('video');
 
         var makeStoryMap = function (element, scenes, layers) {
-
+            console.log(scenes)
             $(element).addClass("storymap");
             var topElem = $('<div class="storymap-trigger"></div>')
                 .css('top', settings.triggerpos);

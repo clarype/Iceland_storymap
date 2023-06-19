@@ -62,23 +62,26 @@
         },
         layer3: {
             layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png')
+        },
+        layer4: {
+	    layer: L.marker([65.5, -22.09])
         }
     };
 
     var scenes = {
-        scene1: {lat: 44.0563432, lng: -123.5099875, zoom:  7, layers: ['layer2'], name: "scene 1"},
-        scene2: {lat: 44.5701158, lng: -123.2949388, zoom: 10, layers: ['layer2'], name: "scene 2"},
-        scene3: {lat: 44.5701158, lng: -123.2949388, zoom: 12, layers: ['layer1', 'layer2'], name: "scene 3"}
+        scene1: {lat: 65.05, lng: -22.50, zoom:  7, layers: ['layer2','layer4'], name: "scene 1"},
+        scene2: {lat: 65.57, lng: -22.29, zoom: 10, layers: ['layer2'], name: "scene 2"},
+        scene3: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1', 'layer2'], name: "scene 3"}
     };
 
     $('#storymap').storymap({
         scenes: scenes,
         layers: layers,
         baselayer: layers.layer3,
-        legend: true,
+        legend: false,
         loader: true,
         flyto: true,
-        credits: "build with<i class='glyphicon glyphicon-heart animated zoomIn infinite' style='color: red'></i> from Bo Zhao",
+        credits: "",
         scalebar: true,
         scrolldown: false,
         progressline: true,
