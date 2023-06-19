@@ -53,6 +53,8 @@
 </div>
 <script type="text/javascript">
 
+	
+
     var layers = {
         layer1: {
             layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'),
@@ -69,20 +71,26 @@
             layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png')
         },
         layer4: {
-			layer: L.marker([64.088, -21.899]).bindTooltip('<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg" style="width:2em;height:2em";>', {permanent: true})
-        },
+			layer: L.marker([64.088, -21.899])
+			.bindTooltip(
+			'<div>'+
+			'<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./assets/imgs/1886_Pioneer_Post_Office.jpeg", '_blank');})
+			        },
 		layer5: {
-			layer: L.marker([64.057, -21.511]).bindTooltip('<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg" style="width:2em;height:2em";>', {permanent: true})
+			layer: L.marker([64.057, -21.511]).bindTooltip('<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg" style="width:3em;height:3em";>', {permanent: true})
         },
 		layer6: {
-			layer: L.marker([63.973, -20.801]).bindTooltip('<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg" style="width:2em;height:2em";>', {permanent: true})
+			layer: L.marker([63.973, -20.801]).bindTooltip('<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg" style="width:3em;height:3em";>', {permanent: true})
         }
 
 
     };
 
     var scenes = {
-        scene1: {lat: 65.05, lng: -22.50, zoom:  7, layers: ['layer2','layer4','layer5','layer6'], name: "scene 1"},
+        scene1: {lat: 65.05, lng: -25.50, zoom:  6, layers: ['layer2','layer4','layer5','layer6'], name: "scene 1"},
         scene2: {lat: 64.088, lng: -21.899, zoom: 10, layers: ['layer2'], name: "scene 2"},
         scene3: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1', 'layer2'], name: "scene 3"}
     };
