@@ -27,7 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
     <!--story map plugin-->
     <script src="./js/storymap.js"></script>
-    <script src="./assets/shp/path_day1_test.js"></script>
+    <script src="./assets/shp/path1.js"></script>
 </head>
 <body>
 <div id="storymap" class="container-fluid">
@@ -113,36 +113,41 @@
 	
 
     var layers = {
-        layer1: {
+        
+		layer1: {
             layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'),
             legend: '<i style="background: black; opacity: 0.5"></i><p><b>legend 1</b></p>'
         },
-    	layer2: {
-            layer: L.geoJSON(geojsonFeature),
+    	
+		layer2: {
+            layer: L.geoJSON(path1),
         },
-        layer4: {
+        
+		layer3: {
 			layer: L.marker([64.088, -21.899])
 			.bindTooltip(
 			'<div>'+
 			'<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
-			.on('click', function markerOnClick(e){window.open("./assets/imgs/1886_Pioneer_Post_Office.jpeg", '_blank');})
-			        },
-	layer5: {
+			.on('click', function markerOnClick(e){window.open("./assets/imgs/1886_Pioneer_Post_Office.jpeg", '_blank');})},
+		
+		layer4: {
 			layer: L.marker([64.057, -21.511]).bindTooltip('<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg" style="width:3em;height:3em";>', {permanent: true})
         },
-	layer6: {
+		
+		layer5: {
 			layer: L.marker([63.973, -20.801]).bindTooltip('<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg" style="width:3em;height:3em";>', {permanent: true})
         }
-
-
     };
 
     var scenes = {
         scene1: {lat: 65.05, lng: -25.50, zoom:  6, layers: ['layer1','layer4','layer5','layer2'], name: "scene 1"},
         scene2: {lat: 64.088, lng: -21.899, zoom: 10, layers: ['layer1'], name: "scene 2"},
-        scene3: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 3"}
+        scene3: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 3"},
+		scene4: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 4"}
+		
+		
     };
 
     $('#storymap').storymap({
