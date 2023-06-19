@@ -34,7 +34,10 @@
         <div class="col-sm-6 col-md-8 storymap-map"></div>
         <div class="col-sm-6 col-md-4 storymap-story">
             <section data-scene="scene1">
-                <h2>scene 1</h2>
+                <h2>Portland to Reykjavik</h2>
+		<p>Left Portland Straight to Reykjavik on a 757-200 for a 7.4 hour flight.</p>
+		<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg">
+
             </section>
             <section data-scene="scene2">
                 <h2>scene 2</h2>
@@ -64,7 +67,7 @@
             layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png')
         },
         layer4: {
-	    layer: L.marker([65.5, -22.09])
+	    layer: L.marker([65.5, -22.09]).bindTooltip('<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg"style="width:50%;height:50%;>', {permanent: true, direction: 'right'})
         }
     };
 
