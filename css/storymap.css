@@ -75,7 +75,7 @@ h1 {
 @media (min-width: 0px) and (max-width: 767px) {
 
     .storymap-story {
-        width: 45%;
+        width: 100%;
     }
 
     .storymap-map {
@@ -93,6 +93,7 @@ h1 {
 
     .viewing {
         background: rgba(221, 221, 221, 0.3);
+		width:45%
     }
 
     .storymap-scroll-down {
