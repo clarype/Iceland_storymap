@@ -67,7 +67,7 @@ h1 {
 
 @media (min-width: 768px) {
     .storymap-story {
-        width: 600px;
+        width: 100%;
     }
 
 }
