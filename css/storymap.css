@@ -108,6 +108,7 @@ section {
     border-radius: 5px;
     background: #eee;
     opacity: 0;
+	width: 45%;
     /*color: #111111;*/
 }
 
