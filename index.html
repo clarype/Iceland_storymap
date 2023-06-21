@@ -119,34 +119,61 @@
             layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'),
             legend: '<i style="background: black; opacity: 0.5"></i><p><b>legend 1</b></p>'
         },
-    	
 		layer2: {
             layer: L.geoJSON(path1),
         },
-        
 		layer3: {
-			layer: L.marker([45.47, -122.62])
+			layer: L.marker([45.59008,-122.5927])
+			.bindTooltip(
+			'<div>'+
+				'<img src="assets/imgs/GOPR0131.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
+		},
+		layer4: {
+			layer: L.marker([53.94154,-109.9129])
+			.bindTooltip(
+			'<div>'+
+				'<img src="assets/imgs/GOPR0140.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
+		},
+		layer5: { // green land
+			layer: L.marker([62.81753,-41.2666])
+			.bindTooltip(
+			'<div>'+
+				'<img src="assets/imgs/GOPR0145.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
+		},
+		layer6: { //landing 
+			layer: L.marker([63.99371, -22.62377])
 			.bindTooltip(
 			'<div>'+
 				'<img src="" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
-			.on('click', function markerOnClick(e){window.open("./pages/layer3.html", '_blank');})},
+			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
+		},
+//		layer4: {
+//			layer: L.marker([78.47, -50.62])
+//			.bindTooltip(
+//			'<div>'+
+//				'<img src="" style="width:3em;height:3em">'+
+//			'</div>', 
+//			{permanent: true})
+//			.on('click', function markerOnClick(e){window.open("./pages/layer3.html", '_blank');})},
+ //       },
+
+       
 		
-		layer4: {
-			layer: L.marker([64.057, -21.511])
-			.bindTooltip(
-			'<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg" style="width:3em;height:3em";>', 
-			{permanent: true})
-        },
-		
-		layer5: {
-			layer: L.marker([63.973, -20.801]).bindTooltip('<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg" style="width:3em;height:3em";>', {permanent: true})
-        }
     };
 
     var scenes = {
-        scene1: {lat: 55.82, lng: -117.50, zoom:  3, layers: ['layer1','layer2','layer3'], name: "scene 1"},
+        scene1: {lat: 55.82, lng: -117.50, zoom:  3, layers: ['layer1','layer2','layer3','layer4','layer5','layer6'], name: "scene 1"},
         scene2: {lat: 64.088, lng: -21.899, zoom: 10, layers: ['layer1'], name: "scene 2"},
         scene3: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 3"},
 		scene4: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 4"}

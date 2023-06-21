@@ -1,12 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Our Funky HTML Page</title>
-<meta name="description" content="Our first page">
-<meta name="keywords" content="html tutorial template">
+    <title>Postcard Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .postcard {
+            width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        .postcard img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .postcard .message {
+            padding: 20px;
+        }
+        
+        .postcard .message p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-<img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg">
-<p>stuff and things</p>
+    <div class="postcard">
+        <img src="..\assets\imgs\inflight.jpg" alt="Postcard Image">
+        <div class="message">
+            <p>Here we are in flight to Iceland.</p>
+        </div>
+    </div>
 </body>
 </html>
