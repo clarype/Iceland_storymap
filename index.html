@@ -47,8 +47,8 @@
             <section data-scene="scene2">
                 <h2>Day 1 : Reykjavik</h2>
 				<p>6.21.2023</p>
-				<!-- <img src="./assets/imgs/1886_Pioneer_Post_Office.jpeg" style="width:100%;height:100%"> -->
-				<p>Coming soon!</p>
+				<img src=".\assets\imgs\GOPR0233.JPG" style="width:100%;height:100%">
+				<p>We hit the ground running in Reyjavik. It was a day that seemed a lot longer than normal due to a lack of sleep and a sun that would not set.</p>
             </section>
 
             <section data-scene="scene3">
@@ -159,26 +159,90 @@
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
 		},
+		/// Day 2
 		layer7: {
             layer: L.geoJSON(path2),
         },
-//		layer4: {
-//			layer: L.marker([78.47, -50.62])
-//			.bindTooltip(
-//			'<div>'+
-//				'<img src="" style="width:3em;height:3em">'+
-//			'</div>', 
-//			{permanent: true})
-//			.on('click', function markerOnClick(e){window.open("./pages/layer3.html", '_blank');})},
- //       },
-
-       
+		layer8: { //Kökulist bakery
+			layer: L.marker([63.9875,-22.5497])
+			.bindTooltip(
+			'<div>'+
+				'<img src=""C:\Users\clary\Documents\gopro\attachments\IMG-3651.jpg" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
+		}, 
+		layer9:{ /// Sky lagoon
+			layer: L.marker([64.11647,-21.9462])
+			.bindTooltip(
+			'<div>'+
+				'<img src="" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
+		}, 
+		layer10: {// Center Hotels Skjaldbreið
+			layer: L.marker([64.14586,-21.9306])
+			.bindTooltip(
+			'<div>'+
+				'<img src="" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
+		},
+		layer11: {// Café Babalú
+			layer: L.marker([64.1440, -21.93020])
+			.bindTooltip(
+			'<div>'+
+				'<img src="" style="width:3em;height:3em">'+
+			'</div>', 
+			
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
+		},
+		layer12: {// Fjallkonan
+			layer: L.marker([64.14841, -21.94093])
+			.bindTooltip(
+			'<div>'+
+				'<img src="" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
+		},
+		layer13: {// Messinn
+			layer: L.marker([64.14657,-21.9377])
+			.bindTooltip(
+			'<div>'+
+				'<img src="" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
+		},
+		layer14: {// Íslenski barinn
+			layer: L.marker([64.14692,-21.93321])
+			.bindTooltip(
+			'<div>'+
+				'<img src="" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
+		},
 		
+		layer15: {//Café Loki
+			layer: L.marker([64.14240,-21.92885])
+			.bindTooltip(
+			'<div>'+
+				'<img src="" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
+		},
+       		
     };
 
     var scenes = {
         scene1: {lat: 55.82, lng: -117.50, zoom:  3, layers: ['layer1','layer2','layer3','layer4','layer5','layer6'], name: "scene 1"},
-        scene2: {lat: 64.088, lng: -21.899, zoom: 10, layers: ['layer1','layer7'], name: "scene 2"},
+        scene2: {lat: 64.1, lng: -22.7, zoom: 10, layers: ['layer1','layer7','layer8','layer9','layer10','layer11','layer12','layer13','layer14', 'layer15'], name: "scene 2"},
         scene3: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 3"},
 		scene4: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 4"}
 		
