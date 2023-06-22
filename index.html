@@ -28,6 +28,7 @@
     <!--story map plugin-->
     <script src="./js/storymap.js"></script>
     <script src="./assets/shp/path1.js"></script>
+	<script src="./assets/shp/path_day2.js"></script>
 </head>
 <body>
 <div id="storymap" class="container-fluid">
@@ -153,11 +154,14 @@
 			layer: L.marker([63.99371, -22.62377])
 			.bindTooltip(
 			'<div>'+
-				'<img src="" style="width:3em;height:3em">'+
+				'<img src="assets/imgs/IMG-3642.jpg" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/day1.html", '_blank');})
 		},
+		layer7: {
+            layer: L.geoJSON(path2),
+        },
 //		layer4: {
 //			layer: L.marker([78.47, -50.62])
 //			.bindTooltip(
@@ -174,7 +178,7 @@
 
     var scenes = {
         scene1: {lat: 55.82, lng: -117.50, zoom:  3, layers: ['layer1','layer2','layer3','layer4','layer5','layer6'], name: "scene 1"},
-        scene2: {lat: 64.088, lng: -21.899, zoom: 10, layers: ['layer1'], name: "scene 2"},
+        scene2: {lat: 64.088, lng: -21.899, zoom: 10, layers: ['layer1','layer7'], name: "scene 2"},
         scene3: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 3"},
 		scene4: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 4"}
 		
