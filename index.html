@@ -53,16 +53,19 @@
 
             <section data-scene="scene3">
                 <h2>Day 2 : Reykjavik 2</h2>
-				<img src="./assets/imgs/GOPR0243.JPG" style="width:100%;height:100%">
+				<img src="./assets/imgs/GOPR0210.JPG" style="width:100%;height:100%">
 				<p>This day was far lower key and it was welcomed. It was fill with more geothermal pool time, conventional culture exposure, and window shopping.</p>
             </section>
 
             <section data-scene="scene4">
                 <h2>Day 3 : To Thingvellir and Back to Reykjavik</h2>
+				<img src="./assets/imgs/GOPR0316.JPG" style="width:100%;height:100%">
+				<p>A jam packed day on snorkeling between the North American and the Eurasian continent, geothermal pool time, geisirs, and watersfalls.</p>
             </section>
 
             <section data-scene="scene5">
-                <h2>Day 4 :</h2>
+                <h2>Day 4 : Starting the Ring Road</h2>
+				<img src=>
             </section>
 
             <section data-scene="scene6">
@@ -161,7 +164,7 @@
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card4.html", '_blank');})
 		},
-		/// Day 2
+		/// Day 1
 		layer7: {
             layer: L.geoJSON(path2),
         },
@@ -239,14 +242,130 @@
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card11.html", '_blank');})
 		},
-       		
+		// Day 2
+		layer16: {//pool  
+			layer: L.marker([64.1458316,-21.8791385])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/laugardalslaug-10.jpg" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card12_2.html", '_blank');})
+		},
+		layer17: {//chruch 
+			layer: L.marker([64.14191, -21.92705])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0211.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card13_2.html", '_blank');})
+		},
+
+		layer18: {//art place 
+			layer: L.marker([64.1472848, -21.9322621])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0249.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card14_2.html", '_blank');})
+		},
+		layer19: {//settlement  
+			layer: L.marker([64.14809,-21.94205])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0283.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card15_2.html", '_blank');})
+		},		
+
+       	// Day 3	
+		layer20: {//  snorkel 
+			layer: L.marker([64.2552, -21.116927])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0316.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card17_3.html", '_blank');})
+		},
+		layer21: {//  lunch and pool  
+			layer: L.marker([64.21384768965332, -20.734644579310928])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0412.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card18_3.html", '_blank');})
+		},		
+		layer22: {//  gyiser water fall   
+			layer: L.marker([64.32668405629538, -20.12125045080309])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0479.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card19_3.html", '_blank');})
+		},
+		// day 4 cozy camper 
+		layer23: {//  costco  
+			layer: L.marker([64.14809,-21.94205])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0196.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card20.html", '_blank');})
+		},
+		layer24: {//  cgeothemral park   
+			layer: L.marker([64.14809,-21.94205])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0196.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card21.html", '_blank');})
+		},
+		layer25: {//  crater   
+			layer: L.marker([64.14809,-21.94205])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0196.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card22.html", '_blank');})
+		},
+		layer26: {//  water fall   
+			layer: L.marker([64.14809,-21.94205])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0196.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card23.html", '_blank');})
+		},
+		layer27: {//  water fall   
+			layer: L.marker([64.14809,-21.94205])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0196.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card24.html", '_blank');})
+		},
+
     };
 
     var scenes = {
-        scene1: {lat: 55.82, lng: -117.50, zoom:  3, layers: ['layer1','layer2','layer3','layer4','layer5','layer6'], name: "scene 1"},
-        scene2: {lat: 64.1, lng: -22.7, zoom: 10, layers: ['layer1','layer7','layer8','layer9','layer10','layer11','layer12','layer13','layer14', 'layer15'], name: "scene 2"},
-        scene3: {lat: 64.1, lng: -22.7, zoom: 15, layers: ['layer1'], name: "scene 3"},
-		scene4: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 4"}
+        scene1: {lat: 55.82, lng: -117.50, zoom: 3 , layers: ['layer1','layer2','layer3','layer4','layer5','layer6'], name: "scene 1"},
+        scene2: {lat: 64.10, lng:  -22.70, zoom: 10, layers: ['layer1','layer7','layer8','layer9','layer10','layer11','layer12','layer13','layer14', 'layer15'], name: "scene 2"},
+        scene3: {lat: 64.15, lng:  -21.947, zoom: 13, layers: ['layer1', 'layer16','layer17','layer18','layer19'], name: "scene 3"},
+		scene4: {lat: 64.20, lng: -22.00, zoom: 8, layers: ['layer1', 'layer20','layer21','layer22'], name: "scene 4"},
+		scene5: {lat: 64.10, lng:  -22.70, zoom: 15, layers: ['layer1', 'layer23','layer24','layer25','layer26','layer27'], name: "scene 5"},
+		//scene6: {lat: 64.1, lng: -22.7, zoom: 15, layers: ['layer1', 'layer16'], name: "scene 6"},
+		//scene7: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 7"}
 		
 		
     };
