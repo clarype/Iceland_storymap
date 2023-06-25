@@ -367,14 +367,52 @@
 			.on('click', function markerOnClick(e){window.open("./pages/card26_4.html", '_blank');})
 		},
 		layer29: {
-            layer: L.geoJSON(leg1),
-			}
+            layer: L.geoJSON(leg1)
+		},
 		//Day 5-------------------------------------------------------------------------------------------
+		layer30: {
+            layer: L.geoJSON(leg1)
+		},
 		//to westman island
-		// walking around 
+		layer31: {//  camp ground    
+			layer: L.marker([63.74976440813053, -20.238825964103228])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0603.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card26_4.html", '_blank');})
+		},
+		// walking around
+		layer32: {//  camp ground    
+			layer: L.marker([63.74976440813053, -20.238825964103228])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0603.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card26_4.html", '_blank');})
+		},
 		// munseum
+		layer33: {//  camp ground    
+			layer: L.marker([63.74976440813053, -20.238825964103228])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0603.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card26_4.html", '_blank');})
+		},
 		// back to iceland
-				
+		layer34: {//  camp ground    
+			layer: L.marker([63.74976440813053, -20.238825964103228])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0603.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card26_4.html", '_blank');})
+		},		
 
     };
 
@@ -383,7 +421,7 @@
         scene2: {lat: 64.10, lng:  -22.70, zoom: 10, layers: ['layer1','layer7','layer8','layer9','layer10','layer11','layer12','layer13','layer14', 'layer15'], name: "scene 2"},
         scene3: {lat: 64.15, lng:  -21.947, zoom: 13, layers: ['layer1', 'layer16','layer17','layer18','layer19'], name: "scene 3"},
 		scene4: {lat: 64.20, lng: -22.00, zoom: 8, layers: ['layer1', 'layer20','layer21','layer22'], name: "scene 4"},
-		scene5: {lat: 64.00, lng: -22.50, zoom: 8, layers: ['layer1', 'layer23','layer24','layer25','layer26','layer27','layer28','layer29'], name: "scene 5"},
+		scene5: {lat: 64.00, lng: -22.50, zoom: 8, layers: ['layer1','layer29', 'layer23','layer24','layer25','layer26','layer27','layer28'], name: "scene 5"},
 		//scene6: {lat: 64.1, lng: -22.7, zoom: 15, layers: ['layer1', 'layer16'], name: "scene 6"},
 		//scene7: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 7"}
 		
