@@ -29,6 +29,7 @@
     <script src="./js/storymap.js"></script>
     <script src="./assets/shp/path1.js"></script>
 	<script src="./assets/shp/path_day2.js"></script>
+	<script src="./assets/shp/leg1.js"></script>
 </head>
 <body>
 <div id="storymap" class="container-fluid">
@@ -65,7 +66,8 @@
 
             <section data-scene="scene5">
                 <h2>Day 4 : Starting the Ring Road</h2>
-				<img src=>
+				<img src="./assets/imgs/GOPR0569.JPG" style="width:100%;height:100%">
+				<p>The first leg of the ring road took use to more geothermal springs, a volcanic crater, and more water falls. Iceland is truly a young landscape.</p>
             </section>
 
             <section data-scene="scene6">
@@ -309,52 +311,70 @@
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card19_3.html", '_blank');})
 		},
-		// day 4 cozy camper 
+		// day 4 cozy camper ------------------------------------------------------------------------------------
 		layer23: {//  costco  
-			layer: L.marker([64.14809,-21.94205])
+			layer: L.marker([64.07367405195127, -21.91418789358205])
 			.bindTooltip(
 			'<div>'+
-				'<img src="./assets/imgs/GOPR0196.JPG" style="width:3em;height:3em">'+
+				'<img src="./assets/imgs/GOPR0531.JPG" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
-			.on('click', function markerOnClick(e){window.open("./pages/card20.html", '_blank');})
+			.on('click', function markerOnClick(e){window.open("./pages/card20_4.html", '_blank');})
 		},
 		layer24: {//  cgeothemral park   
-			layer: L.marker([64.14809,-21.94205])
+			layer: L.marker([64.00080210474334, -21.1877911317095])
 			.bindTooltip(
 			'<div>'+
-				'<img src="./assets/imgs/GOPR0196.JPG" style="width:3em;height:3em">'+
+				'<img src="./assets/imgs/GOPR0535.JPG" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
-			.on('click', function markerOnClick(e){window.open("./pages/card21.html", '_blank');})
+			.on('click', function markerOnClick(e){window.open("./pages/card21_4.html", '_blank');})
 		},
 		layer25: {//  crater   
-			layer: L.marker([64.14809,-21.94205])
+			layer: L.marker([64.04011850811173, -20.885599389674663])
 			.bindTooltip(
 			'<div>'+
-				'<img src="./assets/imgs/GOPR0196.JPG" style="width:3em;height:3em">'+
+				'<img src="./assets/imgs/GOPR0560.JPG" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
-			.on('click', function markerOnClick(e){window.open("./pages/card22.html", '_blank');})
+			.on('click', function markerOnClick(e){window.open("./pages/card22_4.html", '_blank');})
 		},
 		layer26: {//  water fall   
-			layer: L.marker([64.14809,-21.94205])
+			layer: L.marker([63.92394190029627, -20.672701022515923])
 			.bindTooltip(
 			'<div>'+
-				'<img src="./assets/imgs/GOPR0196.JPG" style="width:3em;height:3em">'+
+				'<img src="./assets/imgs/GOPR0579.JPG" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
-			.on('click', function markerOnClick(e){window.open("./pages/card23.html", '_blank');})
+			.on('click', function markerOnClick(e){window.open("./pages/card23_4.html", '_blank');})
 		},
 		layer27: {//  water fall   
-			layer: L.marker([64.14809,-21.94205])
+			layer: L.marker([63.81871264368317, -20.419612606741968])
 			.bindTooltip(
 			'<div>'+
-				'<img src="./assets/imgs/GOPR0196.JPG" style="width:3em;height:3em">'+
+				'<img src="./assets/imgs/GOPR0598.JPG" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
-			.on('click', function markerOnClick(e){window.open("./pages/card24.html", '_blank');})
+			.on('click', function markerOnClick(e){window.open("./pages/card24_4.html", '_blank');})
 		},
+		layer28: {//  camp ground    
+			layer: L.marker([63.74976440813053, -20.238825964103228])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0603.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card26_4.html", '_blank');})
+		},
+		layer29: {
+            layer: L.geoJSON(leg1),
+			}
+		//Day 5-------------------------------------------------------------------------------------------
+		//to westman island
+		// walking around 
+		// munseum
+		// back to iceland
+				
 
     };
 
@@ -363,7 +383,7 @@
         scene2: {lat: 64.10, lng:  -22.70, zoom: 10, layers: ['layer1','layer7','layer8','layer9','layer10','layer11','layer12','layer13','layer14', 'layer15'], name: "scene 2"},
         scene3: {lat: 64.15, lng:  -21.947, zoom: 13, layers: ['layer1', 'layer16','layer17','layer18','layer19'], name: "scene 3"},
 		scene4: {lat: 64.20, lng: -22.00, zoom: 8, layers: ['layer1', 'layer20','layer21','layer22'], name: "scene 4"},
-		scene5: {lat: 64.10, lng:  -22.70, zoom: 15, layers: ['layer1', 'layer23','layer24','layer25','layer26','layer27'], name: "scene 5"},
+		scene5: {lat: 64.00, lng: -22.50, zoom: 8, layers: ['layer1', 'layer23','layer24','layer25','layer26','layer27','layer28','layer29'], name: "scene 5"},
 		//scene6: {lat: 64.1, lng: -22.7, zoom: 15, layers: ['layer1', 'layer16'], name: "scene 6"},
 		//scene7: {lat: 65.57, lng: -22.29, zoom: 12, layers: ['layer1'], name: "scene 7"}
 		
