@@ -35,7 +35,7 @@
 	<script src="./assets/shp/ring_road_leg2.js"></script>
 	<script src="./assets/shp/ring_road_leg3.js"></script>
 	<script src="./assets/shp/ring_road_leg4.js"></script>
-
+	<script src="./assets/shp/ring_road_leg5.js"></script>
 </head>
 <body>
 <div id="storymap" class="container-fluid">
@@ -96,6 +96,8 @@
 			<!-- here   -->
             <section data-scene="scene9">
                 <h2>Day 8 :</h2>
+				<img src="./assets/imgs/GOPR0889.JPG" style="width:100%;height:100%">
+				<p>Left Hofn after a major wind/rain storm and head to the East Fjord where we stop at Petra rock collection. Then headed north to Seydisfjordur a cute little artsy town.  </p>
             </section>
 
             <section data-scene="scene10">
@@ -505,7 +507,7 @@
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card37_6.html", '_blank');})
 		},
-		// day 4 ---------------------------------------------------------------------------------------
+		// day 7 ---------------------------------------------------------------------------------------
 		layer42: {
             layer: L.geoJSON(leg4)
 		},
@@ -534,10 +536,54 @@
 			layer: L.marker([64.25823346900668, -15.204340374917725])
 			.bindTooltip(
 			'<div>'+
-				'<img src="./assets/imgs/GOPR0698.JPG" style="width:3em;height:3em">'+
+				'<img src="./assets/imgs/GOPR0858.JPG" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card40_7.html", '_blank');})
+		},
+		// day 8 ---------------------------------------------------------------------------------------
+		layer46: {
+            layer: L.geoJSON(leg5)
+		},
+		//camp 
+		layer47: {    
+			layer: L.marker([64.25823346900668, -15.204340374917725])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0862.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card41_8.html", '_blank');})
+		},
+		// restront
+		layer48: {    
+			layer: L.marker([64.83537328490347, -13.880581162086465])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0869.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card42_8.html", '_blank');})
+		},		
+		//
+		layer49: {    
+			layer: L.marker([65.26076255336828, -14.010401699192968])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0896.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card43_8.html", '_blank');})
+		},
+		//camp
+		layer50: {    
+			layer: L.marker([65.25939784339137, -14.01229028939817])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0907.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card44_8.html", '_blank');})
 		},		
     };
 
@@ -549,8 +595,8 @@
 		scene5: {lat: 64.00, lng: -22.50, zoom: 8, layers: ['layer1','layer29', 'layer23','layer24','layer25','layer26','layer27','layer28'], name: "scene 5"},
 		scene6: {lat: 63.53, lng: -21.10, zoom: 8, layers: ['layer1', 'layer30', 'layer31', 'layer32', 'layer33', 'layer34'], name: "scene 6"},
 		scene7: {lat: 63.72, lng: -19.65, zoom: 8, layers: ['layer1','layer35','layer36','layer37','layer38','layer39','layer40','layer41'], name: "scene 7"},
-		scene8: {lat: 64.09, lng: -17.59, zoom: 8, layers: ['layer1','layer42','layer43','layer44','layer45'], name: "scene 8"}
-		//scene9: {lat: 65.57, lng: -22.29, zoom: 7, layers: ['layer1'], name: "scene 9"}
+		scene8: {lat: 64.09, lng: -17.59, zoom: 8, layers: ['layer1','layer42','layer43','layer44','layer45'], name: "scene 8"},
+		scene9: {lat: 65.21, lng: -17.86, zoom: 7, layers: ['layer1','layer46','layer47','layer48','layer49','layer50'], name: "scene 9"}
 		//scene10: {lat: 65.57, lng: -22.29, zoom: 7, layers: ['layer1'], name: "scene 10"}
 		//scene11: {lat: 65.57, lng: -22.29, zoom: 7, layers: ['layer1'], name: "scene 11"}
 		
