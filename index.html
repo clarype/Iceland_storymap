@@ -36,6 +36,8 @@
 	<script src="./assets/shp/ring_road_leg3.js"></script>
 	<script src="./assets/shp/ring_road_leg4.js"></script>
 	<script src="./assets/shp/ring_road_leg5.js"></script>
+	<script src="./assets/shp/ring_road_leg6.js"></script>
+	
 </head>
 <body>
 <div id="storymap" class="container-fluid">
@@ -73,35 +75,37 @@
             <section data-scene="scene5">
                 <h2>Day 4 : Starting the Ring Road</h2>
 				<img src="./assets/imgs/GOPR0569.JPG" style="width:100%;height:100%">
-				<p>The first leg of the ring road took use to more geothermal springs, a volcanic crater, and more water falls. Iceland is truly a young landscape.</p>
+				<p>The first leg of the ring road took us to more geothermal springs, a volcanic crater, and more water falls. Iceland is truly a young landscape.</p>
             </section>
 
             <section data-scene="scene6">
                 <h2>Day 5 : </h2>
 				<img src="./assets/imgs/GOPR0617.JPG" style="width:100%;height:100%">
-				<p>Headed to the Westmand islands to find Puffins and checkout the island the had a volcanic eruption that cover the town in 5 feet of ash and lava flow that destroyed part of the town.</p>
+				<p>Headed to the Westman Islands to find Puffins and checkout the island the had a volcanic eruption that cover the town in 5 feet of ash and lava flow that destroyed part of the town.</p>
             </section>
 
             <section data-scene="scene7">
                 <h2>Day 6 :</h2>
 				<img src="./assets/imgs/GOPR0768.JPG" style="width:100%;height:100%">
-				<p>From Vik we explored ice caves, saw man made lava, and saw a landscape that brough Katie to tears.</p>
+				<p>From Vik we explored ice caves, saw man made lava, and saw a glaical landscape that brought Katie to tears.</p>
             </section>
 
             <section data-scene="scene8">
                 <h2>Day 7 :</h2>
 				<img src="./assets/imgs/GOPR0841.JPG" style="width:100%;height:100%">
-				<p>One our was to Hofn we incountered heavy winds that forced us to stay in the van most of the day. But that did not stop us from finding a awesome restaurant.</p>
+				<p>One our was to Hofn we encountered heavy winds that forced us to stay in the van most of the day for a much needed rest. But that did not stop us from finding a awesome restaurant and swimming at the local pool.</p>
             </section>
 			<!-- here   -->
             <section data-scene="scene9">
                 <h2>Day 8 :</h2>
 				<img src="./assets/imgs/GOPR0889.JPG" style="width:100%;height:100%">
-				<p>Left Hofn after a major wind/rain storm and head to the East Fjord where we stop at Petra rock collection. Then headed north to Seydisfjordur a cute little artsy town.  </p>
+				<p>Left Hofn after a major wind/rain storm and head to the Eastfjords where we stoppped at Petra's Stone Collection. Then headed north to Seydisfjordur a cute fishing harbour turned artsy town.  </p>
             </section>
 
             <section data-scene="scene10">
                 <h2>Day 9 :</h2>
+				<img src="./assets/imgs/GOPR0927.JPG" style="width:100%;height:100%">
+				<p>Onward from Seydisfjordur to see more waterfalls, soak in hot pools and traveling off into rural country to find ponies to ride.  </p>
             </section>
 
             <section data-scene="scene11">
@@ -584,7 +588,51 @@
 			'</div>', 
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card44_8.html", '_blank');})
+		},
+		// day 9 ---------------------------------------------------------------------------------------
+		layer51: {
+            layer: L.geoJSON(leg6)
+		},
+		// leave camp 
+		layer52: {    
+			layer: L.marker([65.25939784339137, -14.01229028939817])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0907.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card44_8.html", '_blank');})
+		},
+		// water fall
+		layer53: {    
+			layer: L.marker([65.0944657865186, -14.889211130215312])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0927.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card46_9.html", '_blank');})
 		},		
+		// on the road 
+		layer54: {    
+			layer: L.marker([65.58427113823025, -14.416995349830804])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0950.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card47_9.html", '_blank');})
+		},
+		//camp
+		layer55: {    
+			layer: L.marker([65.6377431374739, -14.292206250021101])
+			.bindTooltip(
+			'<div>'+
+				'<img src="./assets/imgs/GOPR0968.JPG" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card48_9.html", '_blank');})
+		},			
     };
 
     var scenes = {
@@ -596,8 +644,8 @@
 		scene6: {lat: 63.53, lng: -21.10, zoom: 8, layers: ['layer1', 'layer30', 'layer31', 'layer32', 'layer33', 'layer34'], name: "scene 6"},
 		scene7: {lat: 63.72, lng: -19.65, zoom: 8, layers: ['layer1','layer35','layer36','layer37','layer38','layer39','layer40','layer41'], name: "scene 7"},
 		scene8: {lat: 64.09, lng: -17.59, zoom: 8, layers: ['layer1','layer42','layer43','layer44','layer45'], name: "scene 8"},
-		scene9: {lat: 65.21, lng: -17.86, zoom: 7, layers: ['layer1','layer46','layer47','layer48','layer49','layer50'], name: "scene 9"}
-		//scene10: {lat: 65.57, lng: -22.29, zoom: 7, layers: ['layer1'], name: "scene 10"}
+		scene9: {lat: 65.21, lng: -17.86, zoom: 7, layers: ['layer1','layer46','layer47','layer48','layer49','layer50'], name: "scene 9"},
+		scene10: {lat: 65.39, lng: -15.98, zoom: 8, layers: ['layer1','layer51','layer52','layer53','layer54','layer55'], name: "scene 10"}
 		//scene11: {lat: 65.57, lng: -22.29, zoom: 7, layers: ['layer1'], name: "scene 11"}
 		
     };
