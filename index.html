@@ -37,6 +37,7 @@
 	<script src="./assets/shp/ring_road_leg4.js"></script>
 	<script src="./assets/shp/ring_road_leg5.js"></script>
 	<script src="./assets/shp/ring_road_leg6.js"></script>
+	<script src="./assets/shp/ring_road_leg7.js"></script>
 	
 </head>
 <body>
@@ -110,6 +111,8 @@
 
             <section data-scene="scene11">
                 <h2>Day 10 :</h2>
+				<img src="https://drive.google.com/uc?export=view&id=1ODxV78z1iFq9GwoqgYycGWMyhUPfjMky" style="width:100%;height:100%">
+				<p>There was a lot of ground covered today. We start by riding ponies then we went to a geothermal power plant and saw more hot spring. A fun day! </p>
             </section>
 
             <section data-scene="scene12">
@@ -632,7 +635,61 @@
 			'</div>', 
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card48_9.html", '_blank');})
-		},			
+		},
+		//Day 10----------------------------------------------------------------------------------
+		layer56: {
+            layer: L.geoJSON(leg7)
+		},
+		//ponys
+		layer57: {    
+			layer: L.marker([65.6377431374739, -14.292206250021101])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1ODxV78z1iFq9GwoqgYycGWMyhUPfjMky" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card49_10.html", '_blank');})
+		},
+		//powerplant
+		layer58: {    
+			layer: L.marker([65.70291633505194, -16.775183435587394])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1PIig3sWew5XgRrrWjaz96LylP1GftT1T" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card50_10.html", '_blank');})
+		},
+		//geothermal
+		layer59: {    
+			layer: L.marker([65.72205168241356, -16.7876284104773])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card51_10.html", '_blank');})
+		},
+		//pizza
+		layer60: {    
+			layer: L.marker([65.62372400064237, -16.91838320073445])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1UbsamY8jZvcF8FZ9KkBmPHxW_q7VAZWR" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card52_10.html", '_blank');})
+		},
+		//camp
+		layer61: {    
+			layer: L.marker([65.64729869744566, -18.10558748537383])
+			.bindTooltip(
+			'<div>'+
+				'<img src="" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card53_10.html", '_blank');})
+		},
     };
 
     var scenes = {
@@ -645,7 +702,8 @@
 		scene7: {lat: 63.72, lng: -19.65, zoom: 8, layers: ['layer1','layer35','layer36','layer37','layer38','layer39','layer40','layer41'], name: "scene 7"},
 		scene8: {lat: 64.09, lng: -17.59, zoom: 8, layers: ['layer1','layer42','layer43','layer44','layer45'], name: "scene 8"},
 		scene9: {lat: 65.21, lng: -17.86, zoom: 7, layers: ['layer1','layer46','layer47','layer48','layer49','layer50'], name: "scene 9"},
-		scene10: {lat: 65.39, lng: -15.98, zoom: 8, layers: ['layer1','layer51','layer52','layer53','layer54','layer55'], name: "scene 10"}
+		scene10: {lat: 65.39, lng: -15.98, zoom: 8, layers: ['layer1','layer51','layer52','layer53','layer54','layer55'], name: "scene 10"},
+		scene11: {lat: 65.63, lng: -19.06, zoom: 7, layers: ['layer1','layer56','layer57','layer58','layer59','layer60','layer61'], name: "scene 11"}
 		
 		
     };
