@@ -304,7 +304,7 @@
                 $(this).addClass('viewing');
                 var scrollDown = $(".storymap-scroll-down")
 
-                scrollDown.css("left", "2%");
+                //scrollDown.css("left", "2%");
 
                 if (typeof $(this).data("background") !== 'undefined') {
                     $(this)

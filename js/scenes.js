@@ -20,9 +20,13 @@
 		//day10
 		scene10: {lat: 65.39, lng: -15.98, zoom: 8, layers: ['layer1','layer51','layer52','layer53','layer54','layer55'], name: "scene 10"},
 		//day11
-		scene11: {lat: 65.63, lng: -19.06, zoom: 7, layers: ['layer1','layer56','layer57','layer58','layer59','layer60','layer61'], name: "scene 11"}
+		scene11: {lat: 65.63, lng: -19.06, zoom: 7, layers: ['layer1','layer56','layer57','layer58','layer59','layer60','layer61'], name: "scene 11"},
 		//day12
+		scene12: {lat: 65.69, lng: -19.55, zoom: 9, layers: ['layer1','layer62','layer63','layer64','layer65','layer66','layer67','layer68'], name: "scene 12"},
 		//day13
-		//day14
-		//day15
+		scene13: {lat: 65.10, lng: -22.48, zoom: 8, layers: ['layer1','layer69','layer70','layer71','layer72','layer73'], name: "scene 13"},
+		// //day14
+		// scene14: {lat: 65.63, lng: -19.06, zoom: 7, layers: ['layer1'], name: "scene 14"},
+		// //day15
+		// scene15: {lat: 65.63, lng: -19.06, zoom: 7, layers: ['layer1'], name: "scene 15"}
     };

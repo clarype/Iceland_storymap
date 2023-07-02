@@ -546,124 +546,114 @@
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card53_10.html", '_blank');})
 		},
-		// // day 12 -----------------------------------------------------------------------------------------------------------------
-		// layer62: {
-            // layer: L.geoJSON(leg8)
-		// },
-		// //camp
-		// layer63: {    
-			// layer: L.marker([65.6377431374739, -14.292206250021101])
-			// .bindTooltip(
-			// '<div>'+
-				// '<img src="https://drive.google.com/uc?export=view&id=1ODxV78z1iFq9GwoqgYycGWMyhUPfjMky" style="width:3em;height:3em">'+
-			// '</div>', 
-			// {permanent: true})
-			// .on('click', function markerOnClick(e){window.open("./pages/card54_11.html", '_blank');})
-		// },
-		// //garden
-		// layer64: {    
-			// layer: L.marker([65.70291633505194, -16.775183435587394])
-			// .bindTooltip(
-			// '<div>'+
-				// '<img src="https://drive.google.com/uc?export=view&id=1PIig3sWew5XgRrrWjaz96LylP1GftT1T" style="width:3em;height:3em">'+
-			// '</div>', 
-			// {permanent: true})
-			// .on('click', function markerOnClick(e){window.open("./pages/card55_11.html", '_blank');})
-		// },
-		// //art
-		// layer65: {    
-			// layer: L.marker([65.72205168241356, -16.7876284104773])
-			// .bindTooltip(
-			// '<div>'+
-				// '<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
-			// '</div>', 
-			// {permanent: true})
-			// .on('click', function markerOnClick(e){window.open("./pages/card56_11.html", '_blank');})
-		// },
-		// // hot  tub 
-		// layer66: {    
-			// layer: L.marker([65.72205168241356, -16.7876284104773])
-			// .bindTooltip(
-			// '<div>'+
-				// '<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
-			// '</div>', 
-			// {permanent: true})
-			// .on('click', function markerOnClick(e){window.open("./pages/card57_11.html", '_blank');})
-		// },
-				// // road vid
-		// layer67: {    
-			// layer: L.marker([65.46467672156358, -19.349915913045496])
-			// .bindTooltip(
-			// '<div>'+
-				// '<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
-			// '</div>', 
-			// {permanent: true})
-			// .on('click', function markerOnClick(e){window.open("./pages/card58_11.html", '_blank');})
-		// },
-		// // camp 
-		// layer68: {    
-			// layer: L.marker([65.46467672156358, -19.349915913045496])
-			// .bindTooltip(
-			// '<div>'+
-				// '<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
-			// '</div>', 
-			// {permanent: true})
-			// .on('click', function markerOnClick(e){window.open("./pages/card59_11.html", '_blank');})
-		// },
-		// //day 13 --------------------------------------------------------------------
-		// layer68: {
-            // layer: L.geoJSON(leg8)
-		// },
-		// //camp
-		// layer63: {    
-			// layer: L.marker([65.6377431374739, -14.292206250021101])
-			// .bindTooltip(
-			// '<div>'+
-				// '<img src="https://drive.google.com/uc?export=view&id=1ODxV78z1iFq9GwoqgYycGWMyhUPfjMky" style="width:3em;height:3em">'+
-			// '</div>', 
-			// {permanent: true})
-			// .on('click', function markerOnClick(e){window.open("./pages/card54_11.html", '_blank');})
-		// },
-		// //excute
-		// layer69: {    
-			// layer: L.marker([65.70291633505194, -16.775183435587394])
-			// .bindTooltip(
-			// '<div>'+
-				// '<img src="https://drive.google.com/uc?export=view&id=1PIig3sWew5XgRrrWjaz96LylP1GftT1T" style="width:3em;height:3em">'+
-			// '</div>', 
-			// {permanent: true})
-			// .on('click', function markerOnClick(e){window.open("./pages/card55_11.html", '_blank');})
-		// },
-		// //wool
-		// layer70: {    
-			// layer: L.marker([65.72205168241356, -16.7876284104773])
-			// .bindTooltip(
-			// '<div>'+
-				// '<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
-			// '</div>', 
-			// {permanent: true})
-			// .on('click', function markerOnClick(e){window.open("./pages/card56_11.html", '_blank');})
-		// },
-		// // hot  tub 
-		// layer71: {    
-			// layer: L.marker([65.72205168241356, -16.7876284104773])
-			// .bindTooltip(
-			// '<div>'+
-				// '<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
-			// '</div>', 
-			// {permanent: true})
-			// .on('click', function markerOnClick(e){window.open("./pages/card57_11.html", '_blank');})
-		// },
+		// day 12 -----------------------------------------------------------------------------------------------------------------
+		layer62: {
+            layer: L.geoJSON(leg8)
+		},
+		//camp
+		layer63: {    
+			layer: L.marker([65.64671397845639, -18.106737767845303])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1ODxV78z1iFq9GwoqgYycGWMyhUPfjMky" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card54_11.html", '_blank');})
+		},
+		//garden
+		layer64: {    
+			layer: L.marker([65.67498173948567, -18.093921988226008])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1PIig3sWew5XgRrrWjaz96LylP1GftT1T" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card55_11.html", '_blank');})
+		},
+		//art
+		layer65: {    
+			layer: L.marker([65.68008872897661, -18.09182984237641])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card56_11.html", '_blank');})
+		},
+		// hot  tub 
+		layer66: {    
+			layer: L.marker([65.92250334489508, -18.303975435405953])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card57_11.html", '_blank');})
+		},
+				// road vid
+		layer67: {    
+			layer: L.marker([65.47392384646008, -18.66981188243143])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card58_11.html", '_blank');})
+		},
+		// camp 
+		layer68: {    
+			layer: L.marker([65.46469645118005, -19.34988187600948])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card59_11.html", '_blank');})
+		},
+		//day 13 --------------------------------------------------------------------
+		layer69: {
+            layer: L.geoJSON(leg9)
+		},
+		//camp
+		layer70: {    
+			layer: L.marker([65.46469645118005, -19.34988187600948])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1ODxV78z1iFq9GwoqgYycGWMyhUPfjMky" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card60_12.html", '_blank');})
+		},
+		//excute
+		layer71: {    
+			layer: L.marker([65.50150324554633, -20.3986369346135])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1PIig3sWew5XgRrrWjaz96LylP1GftT1T" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card61_12.html", '_blank');})
+		},
+		//wool
+		layer72: {    
+			layer: L.marker([65.39141353392854, -20.939391771808296])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card62_12.html", '_blank');})
+		},
 		// // camp
-		// layer72: {    
-			// layer: L.marker([65.46467672156358, -19.349915913045496])
-			// .bindTooltip(
-			// '<div>'+
-				// '<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
-			// '</div>', 
-			// {permanent: true})
-			// .on('click', function markerOnClick(e){window.open("./pages/card58_11.html", '_blank');})
-		// },
+		layer73: {    
+			layer: L.marker([64.55150170605572, -21.908149817928987])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card63_12.html", '_blank');})
+		},
 		
 		// //Day 14 ---------------------------------------------------------------------------------------------
 		

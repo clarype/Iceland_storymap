@@ -240,7 +240,7 @@ video {
 .storymap-scroll-down {
     position: fixed;
     top: 90%;
-    left: 2%;
+    left: 25%;
     cursor: pointer;
     z-index: 1001;
     font-size: 40px;
