@@ -555,7 +555,7 @@
 			layer: L.marker([65.64671397845639, -18.106737767845303])
 			.bindTooltip(
 			'<div>'+
-				'<img src="https://drive.google.com/uc?export=view&id=1ODxV78z1iFq9GwoqgYycGWMyhUPfjMky" style="width:3em;height:3em">'+
+				'<img src="https://drive.google.com/uc?export=view&id=1CUEBzOiZNicAJysHQkVVWJ5EuksOLeDh" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card54_11.html", '_blank');})
@@ -575,7 +575,7 @@
 			layer: L.marker([65.68008872897661, -18.09182984237641])
 			.bindTooltip(
 			'<div>'+
-				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+				'<img src="https://drive.google.com/uc?export=view&id=1RoedvFBBzBgTP8GinLXrJ9Ijb6SnZQn8" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card56_11.html", '_blank');})
@@ -585,7 +585,7 @@
 			layer: L.marker([65.92250334489508, -18.303975435405953])
 			.bindTooltip(
 			'<div>'+
-				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+				'<img src="https://drive.google.com/uc?export=view&id=1UMZNIeiL2in1aou2m0H0W_fkOtLYh4FY" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card57_11.html", '_blank');})
@@ -595,7 +595,7 @@
 			layer: L.marker([65.47392384646008, -18.66981188243143])
 			.bindTooltip(
 			'<div>'+
-				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+				'<img src="https://drive.google.com/uc?export=view&id=115XZHHOygElGRCJ7Tik4QXu17tYI6NCL" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card58_11.html", '_blank');})
@@ -605,7 +605,7 @@
 			layer: L.marker([65.46469645118005, -19.34988187600948])
 			.bindTooltip(
 			'<div>'+
-				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+				'<img src="https://drive.google.com/uc?export=view&id=17HMEIH97K1sqxnUci3VQqhMHy3yJkU5D" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card59_11.html", '_blank');})
@@ -619,10 +619,10 @@
 			layer: L.marker([65.46469645118005, -19.34988187600948])
 			.bindTooltip(
 			'<div>'+
-				'<img src="https://drive.google.com/uc?export=view&id=1ODxV78z1iFq9GwoqgYycGWMyhUPfjMky" style="width:3em;height:3em">'+
+				'<img src="https://drive.google.com/uc?export=view&id=17HMEIH97K1sqxnUci3VQqhMHy3yJkU5D" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
-			.on('click', function markerOnClick(e){window.open("./pages/card60_12.html", '_blank');})
+			.on('click', function markerOnClick(e){window.open("./pages/card59_11.html", '_blank');})
 		},
 		//excute
 		layer71: {    
@@ -656,5 +656,71 @@
 		},
 		
 		// //Day 14 ---------------------------------------------------------------------------------------------
-		
+		layer74: {
+            layer: L.geoJSON(leg10)
+		},
+		//camp
+		layer75: {    
+			layer: L.marker([64.55150170605572, -21.908149817928987])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1ODxV78z1iFq9GwoqgYycGWMyhUPfjMky" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card64_13.html", '_blank');})
+		},
+		//boat
+		layer76: {    
+			layer: L.marker([65.03890296245034, -23.699266418997105])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1PIig3sWew5XgRrrWjaz96LylP1GftT1T" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card65_13.html", '_blank');})
+		},
+		//camp
+		layer77: {    
+			layer: L.marker([64.55150170605572, -21.908149817928987])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card66_13.html", '_blank');})
+		},
+		// //Day 15 ---------------------------------------------------------------------------------------------
+		layer78: {
+            layer: L.geoJSON(leg11)
+		},
+		//camp
+		layer79: {    
+			layer: L.marker([65.46469645118005, -19.34988187600948])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1ODxV78z1iFq9GwoqgYycGWMyhUPfjMky" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card64_13.html", '_blank');})
+		},
+		//cozy camper
+		layer80: {    
+			layer: L.marker([65.50150324554633, -20.3986369346135])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1PIig3sWew5XgRrrWjaz96LylP1GftT1T" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card65_13.html", '_blank');})
+		},
+		//air port 
+		layer81: {    
+			layer: L.marker([65.39141353392854, -20.939391771808296])
+			.bindTooltip(
+			'<div>'+
+				'<img src="https://drive.google.com/uc?export=view&id=1C31XOGitzxUyGZeCclHQ6CBIEQRmGpeF" style="width:3em;height:3em">'+
+			'</div>', 
+			{permanent: true})
+			.on('click', function markerOnClick(e){window.open("./pages/card66_13.html", '_blank');})
+		},
 };

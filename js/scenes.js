@@ -26,7 +26,7 @@
 		//day13
 		scene13: {lat: 65.10, lng: -22.48, zoom: 8, layers: ['layer1','layer69','layer70','layer71','layer72','layer73'], name: "scene 13"},
 		// //day14
-		// scene14: {lat: 65.63, lng: -19.06, zoom: 7, layers: ['layer1'], name: "scene 14"},
+		scene14: {lat: 64.39, lng: -23.65, zoom: 7, layers: ['layer1','layer74','layer75','layer76','layer77'], name: "scene 14"},
 		// //day15
-		// scene15: {lat: 65.63, lng: -19.06, zoom: 7, layers: ['layer1'], name: "scene 15"}
+		scene15: {lat: 63.97, lng: -22.85, zoom: 6, layers: ['layer1','layer78','layer79','layer80','layer81'], name: "scene 15"}
     };
