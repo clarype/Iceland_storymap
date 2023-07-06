@@ -565,7 +565,7 @@
 			layer: L.marker([65.67498173948567, -18.093921988226008])
 			.bindTooltip(
 			'<div>'+
-				'<img src="https://drive.google.com/uc?export=view&id=1PIig3sWew5XgRrrWjaz96LylP1GftT1T" style="width:3em;height:3em">'+
+				'<img src="https://drive.google.com/uc?export=view&id=11AQCcVuYRUHyGUTQ_uYrWtUNduRKaUkI" style="width:3em;height:3em">'+
 			'</div>', 
 			{permanent: true})
 			.on('click', function markerOnClick(e){window.open("./pages/card55_11.html", '_blank');})
